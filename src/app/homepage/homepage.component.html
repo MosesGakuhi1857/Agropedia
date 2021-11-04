@@ -1,0 +1,26 @@
+
+ <div class="row plants">
+    <div class="col-md-12 text-center m-2">
+
+      <h2>PLANTS</h2>
+    </div>
+    <div class="col-md-3 col-sm-6" *ngFor="let plant of plants; let i = index">
+      <div class="card card-repo">
+          <img src="{{plant.pic}}" alt="plants varieties images" height="350px">
+        <!-- <span class="float-right"><i appStarRepo title="Star  Plant" class="fa fa-star"></i></span> -->
+        <div class="card-body text-center">
+            
+          <h5 class="card-title heading"> {{plant.name}} </h5>
+
+          <p>{{plant.description}}</p>
+          <p class="card-text mt-1">
+           <strong>Favourable elevation: {{ plant.elevation }} meters</strong> </p>
+        </div>
+        <div class="card-body text-center">
+          <p class="card-text"><strong>Favourable temperature : <span class="badge rounded-pill bg-success text-dark">
+              {{plant.temperature }} Celcius</span></strong> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
